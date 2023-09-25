@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Webpage Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="author" content="Don McCurdy">
+  <meta name="description" content="Drag-and-drop preview tool for glTF 2.0 3D models.">
+  <link rel="canonical" href="https://gltf-viewer.donmccurdy.com/">
+  <link rel="shortcut icon" href="public/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"></script>
+  
+  <script type="text/javascript" src="https://flyover.github.io/imgui-js/dist/imgui.umd.js"></script>
+  <script type="text/javascript" src="https://flyover.github.io/imgui-js/dist/imgui_impl.umd.js"></script>
+  
+  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+
+	<script type="importmap">
+	  {
+		"imports": {
+		  "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+		  "three/addons/": "https://unpkg.com/three@0.154.0/examples/jsm/",
+		  "three/examples/": "https://unpkg.com/three@0.154.0/examples/"
+		}
+	  }
+	</script>
+  <script defer type="module" src="src/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1><a href="/" id="headerText">Website Name Here</a></h1>
+  </header>
+  <main class="wrap">
+	<canvas id="output" tabindex="1"></canvas>
+    <div class="dropzone"></div>
+    <div class="spinner"></div>
+  </main>
+</body>
