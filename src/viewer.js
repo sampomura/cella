@@ -800,7 +800,7 @@ export class Viewer {
         });
 		
 		var header = document.getElementById("headerText");
-		header.text = `Website Name Here: Displaying ${this.state.geneType}`;
+		header.text = `Cella - Displaying ${this.state.geneType}`;
     }
 };
 
